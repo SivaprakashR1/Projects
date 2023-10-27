@@ -1,0 +1,17 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+h1 {
+    margin-bottom: 40px;
+}
+.container .card {
+    background-color:antiquewhite ;
+    width: 50%;
+    margin: auto;
+}
+.send button {
+    margin: 10px;
+}

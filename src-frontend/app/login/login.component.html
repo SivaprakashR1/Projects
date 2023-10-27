@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card">
+        <h1>Login Form</h1>
+        <form #myLogin = "ngForm" (ngSubmit)="doLogin(myLogin.value)">
+            <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Name</mat-label>
+                  <input type="text" name="name" [(ngModel)]="data.name" matInput placeholder="Enter Name" required>
+                </mat-form-field>
+              </p>
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Roll Number</mat-label>
+                  <input type="number" name="roll" [(ngModel)]="data.roll" matInput placeholder="Enter Roll Number" required>
+                </mat-form-field>
+              </p>
+
+              <div>
+                <button type="submit" mat-raised-button color="primary">Login</button>
+                <button type="reset" mat-raised-button color="accent">Clear</button>
+            </div>
+              
+        </form>
+    </div>
+</div>
